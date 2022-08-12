@@ -10,4 +10,4 @@ workflows:
       jobs:
         - maven/test:
             maven_command: mvn test
-            test_results_path: test-output/TestReport/
+            test_results_path: target/surefire-reports/
