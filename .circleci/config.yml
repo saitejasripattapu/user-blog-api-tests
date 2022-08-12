@@ -11,3 +11,11 @@ workflows:
         - maven/test:
             maven_command: mvn test
             test_results_path: target/surefire-reports/
+
+jobs:
+  test-job:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - maven/process_test_results:
+          test_results_path: target/surefire-reports/
