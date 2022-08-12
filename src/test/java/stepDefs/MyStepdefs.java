@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import genericUtils.APIList;
 import genericUtils.Utils;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.common.mapper.TypeRef;
@@ -37,12 +38,12 @@ public class MyStepdefs extends Utils {
     @When("User will call {string} API with {string} http request")
     public void user_will_call_api_with_http_request(String resource, String httpMethod) throws IOException {
         APIList apiList = APIList.valueOf(resource);
-        res = given().spec(requestSpecification());
         if(httpMethod.equalsIgnoreCase("POST")) {
             response=res.when().post(apiList.getResource());
         }
         else if(httpMethod.equalsIgnoreCase("GET"))
         {
+            res = given().spec(requestSpecification());
             response=res.when().get(apiList.getResource());
         }
 
@@ -121,6 +122,91 @@ public class MyStepdefs extends Utils {
               Assert.assertTrue(matcher.matches());
                 System.out.println(email +" : "+ matcher.matches()+"\n");
         });
+    }
+
+    @Given("the payload for the Post creation")
+    public void thePayloadForThePostCreation() throws IOException {
+        res = given().spec(requestSpecification());
+    }
+
+    @Then("verify the response and get the postID")
+    public void verifyTheResponseAndGetThePostID() {
+        Assert.assertEquals(response.getStatusCode(),201);
+        String resp=response.asString();
+        JsonPath js = new JsonPath(resp);
+        System.out.println("Id of the post created ->"+js.get("id").toString());
+    }
+
+    @Then("verify the response")
+    public void verifyTheResponse() {
+        Assert.assertEquals(response.getStatusCode(),404);
+    }
+
+
+    @When("User will call {string} API with {string} http request {int}")
+    public void userWillCallAPIWithHttpRequest(String resource, String httpMethod, int value) throws IOException {
+        APIList apiList = APIList.valueOf(resource);
+        if(httpMethod.equalsIgnoreCase("POST")) {
+            response=res.when().post(apiList.getResource()+"/"+value);
+        }
+        else if(httpMethod.equalsIgnoreCase("GET"))
+        {
+            res = given().spec(requestSpecification());
+            response=res.when().get(apiList.getResource()+"/"+value);
+        }
+        else if (httpMethod.equalsIgnoreCase("DELETE"))
+        {
+            res = given().spec(requestSpecification());
+            response=res.when().get(apiList.getResource()+"/"+value);
+        }
+    }
+
+    @Then("verify the response for the delete request")
+    public void verifyTheResponseForTheDeleteRequest() {
+        Assert.assertEquals(response.getStatusCode(),200);
+    }
+
+    @Given("the payload for the comment creation")
+    public void thePayloadForTheCommentCreation() throws IOException {
+        res = given().spec(requestSpecification()).body("  {\n" +
+                "    \"postId\": 81,\n" +
+                "    \"id\": 600,\n" +
+                "    \"name\": \"name of the comment\",\n" +
+                "    \"email\": \"123@123.123\",\n" +
+                "    \"body\": \" body of the comment\"\n" +
+                "  }");
+    }
+
+    @Then("verify the response and get the commentID")
+    public void verifyTheResponseAndGetTheCommentID() {
+        Assert.assertEquals(response.getStatusCode(),201);
+        CommentsModel commentDetails = response.getBody().as(CommentsModel.class);
+        System.out.println("No.of comments for a particular user" + commentsID.size());
+        System.out.println("New comment ID created ->" +commentDetails.getId());
+    }
+
+    @And("verify that the new comment is displayed when called with GET request")
+    public void verifyThatTheNewCommentIsDisplayedWhenCalledWithGETRequest() throws IOException {
+        response= given().spec(requestSpecification()).get("/comments/501").then().extract().response();
+        Assert.assertEquals(response.getStatusCode(),200);
+    }
+
+    @And("verify that the new post is displayed when called with GET request")
+    public void verifyThatTheNewPostIsDisplayedWhenCalledWithGETRequest() throws IOException {
+        response= given().spec(requestSpecification()).get("/posts/101").then().extract().response();
+        Assert.assertEquals(response.getStatusCode(),200);
+    }
+
+    @Then("verify the response for particular delete request")
+    public void verifyTheResponseForParticularDeleteRequest() {
+        Assert.assertEquals(response.getStatusCode(),404);
+    }
+
+
+    @And("verify that the post {int} is not present in GET post by id API")
+    public void verifyThatThePostIsNotPresentInGETPostByIdAPI(int postId) throws IOException {
+        response= given().spec(requestSpecification()).get("/posts/"+postId).then().extract().response();
+        Assert.assertEquals(response.getStatusCode(),404);
     }
 }
 
