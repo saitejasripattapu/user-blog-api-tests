@@ -1,0 +1,1136 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 12, 2022 12:25:58 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@API</a><a class="dropdown-item" href="#">@NegativeScenario</a><a class="dropdown-item" href="#">@Regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Blog API Automation</p>
+            <p class="text-sm">
+              <span>12:25:59</span> / <span>00:00:04:206</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">User Blog API Automation</h5>
+<span class='badge badge-success'>08.12.2022 12:25:59</span>
+<span class='badge badge-danger'>08.12.2022 12:26:03</span>
+<span class='badge badge-default'>00:00:04:206</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Getting a particular user from the users API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.user_will_call_api_with_http_request(java.lang.String,java.lang.String)">
+                <span>When User will call "users" API with "GET" http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verify_the_response_and_get_the_user_id_for_user(java.lang.String)">
+                <span>Then verify the response and get the userID for "Delphine" user</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Get the posts written by a particular User</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.user_will_call_api_with_http_request(java.lang.String,java.lang.String)">
+                <span>When User will call "posts" API with "GET" http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseAndGetThePostsWrittenByUser()">
+                <span>Then verify the response and get the posts written by user</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>For each post of the user get the comments</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.user_will_call_api_with_http_request(java.lang.String,java.lang.String)">
+                <span>When User will call "comments" API with "GET" http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseAndGetTheCommentsForEachPost()">
+                <span>Then verify the response and get the comments for each post</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.validateTheEmailInEachComment()">
+                <span>And validate the email in each comment</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>Create a new post for the given user</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.thePayloadForThePostCreation()">
+                <span>Given the payload for the Post creation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.user_will_call_api_with_http_request(java.lang.String,java.lang.String)">
+                <span>When User will call "posts" API with "POST" http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseAndGetThePostID()">
+                <span>Then verify the response and get the postID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefs.MyStepdefs.verifyThatTheNewPostIsDisplayedWhenCalledWithGETRequest()">
+                <span>And verify that the new post is displayed when called with GET request</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at stepDefs.MyStepdefs.verifyThatTheNewPostIsDisplayedWhenCalledWithGETRequest(MyStepdefs.java:197)
+	at ✽.verify that the new post is displayed when called with GET request(file:///Users/gebruiker/Developer/gm-assignments/assignments/user-blog-api-tests/user-blog-api-tests/src/test/java/features/APIAutomation.feature:25)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>Create a new comments for the given post</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.thePayloadForTheCommentCreation()">
+                <span>Given the payload for the comment creation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.user_will_call_api_with_http_request(java.lang.String,java.lang.String)">
+                <span>When User will call "comments" API with "POST" http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseAndGetTheCommentID()">
+                <span>Then verify the response and get the commentID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefs.MyStepdefs.verifyThatTheNewCommentIsDisplayedWhenCalledWithGETRequest()">
+                <span>And verify that the new comment is displayed when called with GET request</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at stepDefs.MyStepdefs.verifyThatTheNewCommentIsDisplayedWhenCalledWithGETRequest(MyStepdefs.java:191)
+	at ✽.verify that the new comment is displayed when called with GET request(file:///Users/gebruiker/Developer/gm-assignments/assignments/user-blog-api-tests/user-blog-api-tests/src/test/java/features/APIAutomation.feature:33)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>Search for a user who is not available</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "users" API with "GET" http request 345</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponse()">
+                <span>Then verify the response</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>Search for a particular post which is not available</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "posts" API with "GET" http request 345</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponse()">
+                <span>Then verify the response</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Search for a particular post which is not available</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "comments" API with "GET" http request 700</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponse()">
+                <span>Then verify the response</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Delete a particular user</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "users" API with "DELETE" http request 9</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseForTheDeleteRequest()">
+                <span>Then verify the response for the delete request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="34"><span class="badge log pass-bg mr-2">Pass</span>Delete a particular user which is not present</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "users" API with "DELETE" http request 5677</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseForParticularDeleteRequest()">
+                <span>Then verify the response for particular delete request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log fail-bg mr-2">Fail</span>Delete a particular post</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "posts" API with "DELETE" http request 4</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseForTheDeleteRequest()">
+                <span>Then verify the response for the delete request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefs.MyStepdefs.verifyThatThePostIsNotPresentInGETPostByIdAPI(int)">
+                <span>And verify that the post 4 is not present in GET post by id API</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at stepDefs.MyStepdefs.verifyThatThePostIsNotPresentInGETPostByIdAPI(MyStepdefs.java:209)
+	at ✽.verify that the post 4 is not present in GET post by id API(file:///Users/gebruiker/Developer/gm-assignments/assignments/user-blog-api-tests/user-blog-api-tests/src/test/java/features/APIAutomation.feature:67)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="41"><span class="badge log pass-bg mr-2">Pass</span>Delete a particular post which is not present</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "posts" API with "DELETE" http request 578</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseForParticularDeleteRequest()">
+                <span>Then verify the response for particular delete request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log pass-bg mr-2">Pass</span>Delete a particular comment</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "comments" API with "DELETE" http request 27</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseForTheDeleteRequest()">
+                <span>Then verify the response for the delete request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="47"><span class="badge log pass-bg mr-2">Pass</span>Delete a particular comment which is not present</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.userWillCallAPIWithHttpRequest(java.lang.String,java.lang.String,int)">
+                <span>When User will call "comments" API with "DELETE" http request 700</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefs.MyStepdefs.verifyTheResponseForParticularDeleteRequest()">
+                <span>Then verify the response for particular delete request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>And verify that the new post is displayed when called with GET request</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Create a new post for the given user.And verify that the new post is displayed when called with GET request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>And verify that the new comment is displayed when called with GET request</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Create a new comments for the given post.And verify that the new comment is displayed when called with GET request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>And verify that the post 4 is not present in GET post by id API</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular post.And verify that the post 4 is not present in GET post by id API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@API</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@API</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Getting a particular user from the users API</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Getting a particular user from the users API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Get the posts written by a particular User</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Get the posts written by a particular User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>For each post of the user get the comments</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.For each post of the user get the comments</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Create a new post for the given user</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Create a new post for the given user</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Create a new comments for the given post</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Create a new comments for the given post</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Search for a user who is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a user who is not available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>Search for a particular post which is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a particular post which is not available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Search for a particular post which is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a particular post which is not available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>Delete a particular user</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular user</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='34'>Delete a particular user which is not present</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular user which is not present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>Delete a particular post</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular post</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>Delete a particular post which is not present</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular post which is not present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>Delete a particular comment</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular comment</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Delete a particular comment which is not present</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular comment which is not present</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@NegativeScenario</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@NegativeScenario</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Search for a user who is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a user who is not available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>Search for a particular post which is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a particular post which is not available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Search for a particular post which is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a particular post which is not available</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Getting a particular user from the users API</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Getting a particular user from the users API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Get the posts written by a particular User</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Get the posts written by a particular User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>For each post of the user get the comments</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.For each post of the user get the comments</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Create a new post for the given user</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Create a new post for the given user</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Create a new comments for the given post</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Create a new comments for the given post</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Search for a user who is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a user who is not available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>Search for a particular post which is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a particular post which is not available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Search for a particular post which is not available</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Search for a particular post which is not available</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>Delete a particular user</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular user</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='34'>Delete a particular user which is not present</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular user which is not present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>Delete a particular post</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular post</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>Delete a particular post which is not present</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular post which is not present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>Delete a particular comment</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular comment</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Delete a particular comment which is not present</a>
+<div class="">
+<span class="badge badge-default">User Blog API Automation.Delete a particular comment which is not present</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 12, 2022 12:25:58 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 12, 2022 12:26:03 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='78%'><b>11</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='21%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'><b>31</b> steps passed</small></div>
+<div>
+<small data-tooltip='8%'><b>3</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"User Blog API Automation":4.206
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@API</td>
+<td>11</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>78,571%</td>
+</tr>
+<tr>
+<td>@NegativeScenario</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>11</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>78,571%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 11,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 31,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
