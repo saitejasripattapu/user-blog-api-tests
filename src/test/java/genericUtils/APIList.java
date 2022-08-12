@@ -4,6 +4,7 @@ public enum APIList {
     users("/users"),
     posts("/posts"),
     comments("/comments"),
+    particularUser("/users/345")
 
     ;
 
